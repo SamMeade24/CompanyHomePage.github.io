@@ -1,0 +1,334 @@
+/* Universal Styles */
+
+html {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 1rem; /* To offset the fixed header */ 
+}
+
+.centre {
+  text-align: center;
+}
+
+.button {
+  border-radius: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.button:hover {
+  border-radius: 2rem;
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 1px;
+  text-decoration: underline;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .main-content {
+    top: 1rem;
+    width: 35rem;
+  }
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 5.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+header img {
+  height: 5rem;
+  width: 10rem;
+  margin-top: 0.75rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 0.75rem;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header .mobile {
+    display: none;
+  }
+
+@media only screen and (max-width: 425px) {  
+
+  header .desktop {
+      display: none;
+    }
+
+  header .mobile {
+      display: block;
+      width: 100%;
+      position: absolute;
+    }
+  
+    header .desktop-logo {
+      display: none;
+    }
+
+  header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+
+  header .mobile li {
+    display: 100%;  
+    padding: 0;
+    }
+  
+  }
+
+/* Sign-up Section */
+
+#sign-up-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 37.5rem;
+  background-image: url(./Images/sign-up-banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+
+#sign-up-cta {
+  position: relative;
+  top: 250px;
+  bottom: 100px;
+  left: 10%;
+  padding: 0 2.5rem 2rem 2.5rem;
+  text-align: center;
+  border: solid 1px #fff;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+#sign-up-cta .content-centre {
+  width: 22.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+}
+
+#sign-up-cta h2 {
+  font-size: 1.25rem;
+}
+
+#sign-up-cta h3 {
+  font-size: 1.125rem;
+}
+
+#sign-up-cta .button {
+  margin-top: 1rem;
+  padding: .5rem .5rem;
+  width: 10rem;
+  margin-left: 5.65rem;
+}
+
+@media only screen and (max-width: 425px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta {
+    display: none;
+  }
+}
+
+/* About Us Section */
+
+#about-us-section {
+  display: flex;
+  background-color: #000;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+#about-us-section .content-centre {
+  color: #fff;
+  text-align: center;
+  width: 30rem;
+}
+
+#about-us-section h2 {
+  color: white;
+  font-family: 'anton';
+}
+
+/* Services Section */
+
+#services-section {
+  display: inline-flex;
+  height: 35rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  justify-content: center;
+  background-image: url(./Images/services-banner.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+
+#services-section .flex-item {
+  display: inline-block;
+  vertical-align: top;
+  height: 12.5rem;
+  width: 14rem;
+  color: white;
+  justify-items: center;
+  background-color: black;
+  margin: 5rem 1rem;
+  padding-top: 1rem 1rem;
+  opacity: 0.75;
+  border-radius: 2rem;
+}
+
+#services-section h2 {
+  color: #fff;
+  text-decoration: solid;
+  font-family: 'anton';
+}
+
+#services-section h3 {
+  color: #fff;
+  text-decoration: solid;
+}
+
+@media only screen and (max-width: 425px) {
+  #services-section {
+    height: 12.5rem;
+  }
+  
+  #services-section .flex-item {
+    display: block;
+    height: 1.5rem;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 2rem;
+  }
+
+  #services-section .flex-item:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  #services-section p {
+    display: none;
+  }
+}
+
+/* Team Section */
+
+#team-section {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+
+#team-member {
+  display: inline-block;
+  margin: 5rem;
+  width: 15rem;
+  height: auto;
+}
+
+#team-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+#team-section h2 {
+  font-family: 'anton';
+  text-decoration: solid;
+}
+
+/* Footer */
+
+footer {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  justify-content: center;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+footer h2 {
+  font-family: 'anton';
+}
+
+#contact-details {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#web-signature {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#agency-signature a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+  footer {
+    top: 1rem;
+    width: 35rem;
+  }
+}
+  
