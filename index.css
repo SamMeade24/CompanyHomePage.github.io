@@ -126,7 +126,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 37.5rem;
-  background-image: url(./Images/sign-up-banner-img.jpg);
+  background-image: url(sign-up-banner-img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,7 +208,7 @@ header .mobile {
   margin-top: 1rem;
   padding-top: 0.5rem;
   justify-content: center;
-  background-image: url(./Images/services-banner.jpg);
+  background-image: url(services-banner.jpg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
